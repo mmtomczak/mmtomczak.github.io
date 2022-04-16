@@ -20,11 +20,26 @@ a{
 }
 img {width: 100%;}
 
+.lang-list{
+    display:flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+.content-container-1{
+    display:flex;
+    justify-content: space-between;
+    padding: 2em;
+}
 .nav-container{
     background: #C1DBDB;
 }
 
 header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+main{
     display: flex;
     justify-content: space-between;
     padding: 2em;
@@ -71,7 +86,7 @@ header{
     padding: 2em 4em 2em 2em;
     float: right;
 }
-#social-img{
+.social-img{
     width: 20px;
 }
 }
