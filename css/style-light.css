@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+body {
+    height: 25em;
+    font-family: Montserrat;
+    color: white;
+    background: #192d4f;
+    padding: 10em;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.logo {
+    font-weight: bold;
+    color: white;
+    font-size: 50px;
+}
+
+.name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_tab{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.buttons_tab{
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.button_generic{
+    width: 150px;
+    height: 50px;
+    border: none;
+    background-color: #192d4f;
+    color: white;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 0 #192d4f;
+    transition: ease-out 0.7s;
+    outline: none;
+}
+
+.button_generic:hover{
+    box-shadow: inset 300px 0 0 0 #436db5;
+    cursor: pointer;
+    color: black;
+}
+
+
+.social_tab{
+    width: 100%;
+    margin: 1px 1px 1px 1px;
+}
+
+.social_list{
+    display: flex;
+    justify-content: center;
+}
+
+.social_link{
+    padding: 1em;
+}
+
+.social_img{
+    width: 1.5em;
+}
+

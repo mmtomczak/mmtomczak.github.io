@@ -2,7 +2,7 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style-main.css">
+    <link rel="stylesheet" href=css/style-light.css>
     <title>Mateusz Tomczak</title>
 </head>
 <body>
@@ -36,29 +36,24 @@
     </div>
 </div>
 -->
-
+<!--
 <div class="head-container">
-    <div class="nav-container">
+    <div class="head-nav">
         <header>
             <a href="index.html" class="logo">Mateusz Tomczak</a>
             <nav>
                 <ul class="nav-list">
-                    <li>My CV</li>
+                    <li><a href="#"></a>My CV</li>
                 </ul>
             </nav>
         </header>
-        <div class="social">
-            <ul class="social-list">
-                <li><a href="#"><img src="images/LI.png" alt="LinkedIn" class="social-img"></a></li>
-                <li><a href="#"><img src="images/FB.png" alt="Facebook" class="social-img"></a></li>
-            </ul>
-        </div>
 </div>
 <div class="content">
-    <div class="content-container-1">
+    <div class="test">
+    <div class="content__intro">
         <main>
         <div class="portrait">
-            <img src="images/portrait.png" alt="Mateusz Tomczak">
+            <img src="images/portrait.png" alt="Mateusz Tomczak" class="portrait-img">
         </div>
         <div class="contact">
             <ul>
@@ -67,16 +62,10 @@
             </ul>
         </div>
         </main>
-        <div class="language">
-            <ul class="lang-list">
-                <li>PL</li>
-                <li>EN</li>
-            </ul>
-        </div>
     </div>
-<div class="content-container">
+<div class="content__about">
     <h2>About me</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci autem beatae corporis, exercitationem
+        <p class="content__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci autem beatae corporis, exercitationem
             facilis iste laboriosam maiores nam nulla, obcaecati omnis optio quasi repellat saepe sequi sit tempora totam.
             Aliquam aperiam commodi deserunt neque nobis perspiciatis quo tempora. Adipisci aliquam, animi atque corporis,
             culpa doloribus eos in libero nesciunt nisi praesentium, quae quia quo rerum unde ut voluptatem? Accusamus
@@ -85,7 +74,8 @@
             quaerat quibusdam quo quod quos, sint tenetur vel voluptatibus. Consequatur!
         </p>
 </div>
-<div class="content-container">
+    </div>
+<div class="content__edu">
     <h2>Education</h2>
     <div class="education">
         <ul class="education-list">
@@ -100,16 +90,45 @@
         </ul>
     </div>
 </div>
-<div class="content-container">
+<div class="content__exp">
     <h2>Experience</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, praesentium!</p>
 </div>
-<div class="content-container">
+<div class="content__lang">
     <h2>Languages</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, magnam!</p>
 </div>
 
 </div>
+</div>
+-->
+
+<div class="main_container">
+    <div class="name">
+        <p><a href='index.html' class="logo">Mateusz Tomczak</a></p>
+        <p class="lang_change">PL/EN</p>
+    </div>
+    <div class="about">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, laboriosam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, voluptatem?</p>
+    </div>
+    <div class="nav_tab">
+        <ul class="buttons_tab">
+            <li><a href="index-in-progress.html" class="nav_list" id="ab"><button class="button_generic">About me</button></a></li>
+            <li><a href="index-in-progress.html" class="nav_list" id="skl_exp"><button class="button_generic">Skills & Experience</button></a></li>
+            <!--<li><a href="index-in-progress.html" class="nav_list" id="projects"><button class="button_generic">Projects</button></a></li>-->
+            <li><a href="index-in-progress.html" class="nav_list" id="cv"><button class="button_generic">My CV</button></a></li>
+        </ul>
+
+    </div>
+    <div class="social_tab">
+        <ul class="social_list">
+            <li><a href="#" class="social_link"><img src="images/FB.png" alt="Facebook" class="social_img"></a></li>
+            <li><a href="#" class="social_link"><img src="images/LI.png" alt="LinkedIn" class="social_img"></a></li>
+        </ul>
+    </div>
+
+
 </div>
 
 </body>
