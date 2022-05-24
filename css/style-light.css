@@ -20,7 +20,7 @@ a {
     text-decoration: none;
 }
 
-.lang_change{
+.lang_change {
     display: none;
 }
 
@@ -29,14 +29,14 @@ a {
     justify-content: space-between;
 }
 
-.nav_tab{
+.nav_tab {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     color: white;
 }
 
-.important_text{
+.important_text {
     font-weight: bold;
 }
 
@@ -45,7 +45,7 @@ a {
     color: white;
 }
 
-.about{
+.about {
     text-align: justify;
 }
 
@@ -75,7 +75,7 @@ a {
     font-size: 0.8em;
 }
 
-.button_generic{
+.button_generic {
     border: none;
     background-color: #192d4f;
     color: white;
@@ -89,7 +89,7 @@ a {
     outline: none;
 }
 
-.button_generic:active{
+.button_generic:active {
     box-shadow: inset 200px 0 0 0 #436db5;
     cursor: pointer;
     color: black;
@@ -97,7 +97,7 @@ a {
 
 /* mobile site */
 
-.button_generic{
+.button_generic {
     width: 200px;
     height: 50px;
 }
@@ -110,7 +110,7 @@ a {
     font-size: 0.6em;
 }
 
-.main_text{
+.main_text {
     font-size: 0.8em;
     text-align: left;
 }
@@ -129,7 +129,7 @@ a {
 /* desktop site */
 @media only screen and (min-width: 850px) {
 
-    body{
+    body {
         height: 25em;
         padding: 10em;
     }
@@ -146,7 +146,7 @@ a {
         font-size: 0.6em;
     }
 
-    .buttons_tab{
+    .buttons_tab {
         display: flex;
         justify-content: space-around;
         padding: 2em;
@@ -185,7 +185,7 @@ a {
         font-size: 1em;
     }
 
-    .button_generic:active{
+    .button_generic:active {
         color: #192d4f;
         transition: 0.1s;
         font-size: 0.9em;
