@@ -107,7 +107,7 @@ a {
 }
 
 .comment_text {
-    font-size: 0.8em;
+    font-size: 0.6em;
 }
 
 .main_text{
@@ -143,7 +143,7 @@ a {
     }
 
     .comment_text {
-        font-size: 15px;
+        font-size: 0.6em;
     }
 
     .buttons_tab{
@@ -162,6 +162,7 @@ a {
 
     .button_generic:hover {
         box-shadow: inset 250px 0 0 0 #436db5;
+        color: black;
     }
 
     .CV_tab {
@@ -182,6 +183,12 @@ a {
         padding: 1em;
         margin: 0 1em 0 0;
         font-size: 1em;
+    }
+
+    .button_generic:active{
+        color: #192d4f;
+        transition: 0.1s;
+        font-size: 0.9em;
     }
 
 }
