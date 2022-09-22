@@ -20,7 +20,7 @@ a {
     text-decoration: none;
 }
 
-.lang_change {
+.language-change {
     display: none;
 }
 
@@ -29,14 +29,14 @@ a {
     justify-content: space-between;
 }
 
-.nav_tab {
+.nav-container {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     color: white;
 }
 
-.important_text {
+.important-text {
     font-weight: bold;
 }
 
@@ -45,11 +45,11 @@ a {
     color: white;
 }
 
-.about {
+.text-container {
     text-align: justify;
 }
 
-.social_list {
+.social-list {
     display: flex;
     justify-content: center;
 }
@@ -58,16 +58,16 @@ a {
     width: 1.5em;
 }
 
-.social_tab {
+.social-container {
     width: 100%;
     margin: 1px 1px 1px 1px;
 }
 
-.social_link {
+.social-link {
     padding: 1em;
 }
 
-.buttons_tab {
+.buttons-tab {
     display: grid;
     gap: 1em;
     justify-items: center;
@@ -75,8 +75,7 @@ a {
     font-size: 0.8em;
 }
 
-.button_generic {
-    border: none;
+.generic-button {
     background-color: #192d4f;
     color: white;
     border: solid white 1px;
@@ -89,20 +88,69 @@ a {
     outline: none;
 }
 
-.button_generic:active {
+.generic-button:active {
     box-shadow: inset 200px 0 0 0 #436db5;
     cursor: pointer;
     color: black;
 }
 
+.collapsible{
+    background-color: #192d4f;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    border: solid white 1px;
+    font-family: Montserrat;
+    font-weight: bold;
+    padding: 18px;
+    font-size: 1em;
+    box-shadow: inset 0 0 1px 0 #192d4f;
+    transition: 0.1s;
+    outline: none;
+    text-align: left;
+}
+
+.active, .collapsible:active {
+    border-radius: 5px 5px 0 0;
+    transition: 0.5s;
+    border-style: solid none none none;
+    box-shadow: inset 0 60px 0 0 #192d4f;
+    background-color: #436db5;
+    color: black;
+}
+
+.collapsible.active:hover {
+    box-shadow: inset 0 60px 0 0 #192d4f;
+    transition: 0.9s;
+    color: white;
+}
+
+.collapsible-text-container {
+    padding: 0 18px;
+    border-radius: 0 0 5px 5px;
+    max-height: 0;
+    border: 1px white;
+    border-style: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #436db5;
+    color: white;
+}
+.collapsible-text-container.active{
+    border-style: none solid solid solid;
+}
+
+
+
 /* mobile site */
 
-.button_generic {
+.generic-button {
     width: 200px;
     height: 50px;
 }
 
-.proj_tab{
+.proj-container{
     overflow-wrap: break-word;
 }
 
@@ -114,7 +162,7 @@ a {
     font-size: 0.6em;
 }
 
-.main_text {
+.main-text {
     font-size: 0.8em;
     text-align: left;
 }
@@ -139,12 +187,12 @@ a {
         font-size: 50px;
     }
 
-    .proj_tab{
+    .proj-container{
         inline-size: 50em;
         overflow-wrap: break-word;
     }
 
-    .main_text {
+    .main-text {
         font-size: 20px;
     }
 
@@ -152,21 +200,40 @@ a {
         font-size: 0.6em;
     }
 
-    .buttons_tab {
+    .buttons-tab {
         display: flex;
         justify-content: space-around;
         padding: 2em;
         font-size: 1em;
     }
 
-    .button_generic {
+    .collapsible{
+        width: 100%;
+        height: 60px;
+        box-shadow: inset 0 0 0 0 #192d4f;
+        transition: ease-out 0.3s;
+    }
+
+    .collapsible:hover{
+        box-shadow: inset 0 60px 0 0 #436db5;
+        cursor: pointer;
+        color: black;
+    }
+
+    .collapsible:active {
+        color: #192d4f;
+        transition: 0.1s;
+        font-size: 0.9em;
+    }
+
+    .generic-button {
         width: 150px;
         height: 50px;
         box-shadow: inset 0 0 0 0 #192d4f;
         transition: ease-out 0.7s;
     }
 
-    .button_generic:hover {
+    .generic-button:hover {
         box-shadow: inset 250px 0 0 0 #436db5;
         cursor: pointer;
         color: black;
@@ -186,13 +253,13 @@ a {
         padding: 1em;
     }
 
-    .link_list .button_generic {
+    .link_list .generic-button {
         padding: 1em;
         margin: 0 1em 0 0;
         font-size: 1em;
     }
 
-    .button_generic:active {
+    .generic-button:active {
         color: #192d4f;
         transition: 0.1s;
         font-size: 0.9em;
