@@ -111,7 +111,7 @@ a {
     text-align: left;
 }
 
-.collapsible.active:active {
+.active, .collapsible:active {
     border-radius: 5px 5px 0 0;
     transition: 0.5s;
     border-style: solid none none none;
