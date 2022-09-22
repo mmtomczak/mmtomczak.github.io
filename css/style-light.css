@@ -111,7 +111,7 @@ a {
     text-align: left;
 }
 
-.active, .collapsible:active {
+.collapsible.active:active {
     border-radius: 5px 5px 0 0;
     transition: 0.5s;
     border-style: solid none none none;
@@ -130,17 +130,12 @@ a {
     padding: 0 18px;
     border-radius: 0 0 5px 5px;
     max-height: 0;
-    border: 1px white;
-    border-style: none;
+    border: 1px none white;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     background-color: #436db5;
     color: white;
 }
-.collapsible-text-container.active{
-    border-style: none solid solid solid;
-}
-
 
 
 /* mobile site */
