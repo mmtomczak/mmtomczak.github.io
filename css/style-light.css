@@ -137,16 +137,20 @@ a {
     color: white;
 }
 
+.game-btns{
+    display: grid;
+    gap: 1em;
+    padding: 1em;
+    font-size: 0.8em;
+    justify-content: left;
+}
+
 
 /* mobile site */
 
 .generic-button {
     width: 200px;
     height: 50px;
-}
-
-.proj-container{
-    overflow-wrap: break-word;
 }
 
 .logo {
@@ -203,7 +207,6 @@ a {
     }
 
     .collapsible{
-        width: 100%;
         height: 60px;
         box-shadow: inset 0 0 0 0 #192d4f;
         transition: ease-out 0.3s;
