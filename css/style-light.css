@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+/* attrs */
+
+body {
+    height: 25em;
+    font-family: Montserrat;
+    color: white;
+    background: #192d4f;
+    padding: 3em;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #436db5;
+}
+
+.language-change {
+    display: none;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.important-text {
+    font-weight: bold;
+}
+
+.logo {
+    font-weight: bold;
+    color: white;
+}
+
+.text-container {
+    text-align: justify;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+}
+
+.social_img {
+    width: 1.5em;
+}
+
+.social-container {
+    width: 100%;
+    margin: 1px 1px 1px 1px;
+}
+
+.social-link {
+    padding: 1em;
+}
+
+.buttons-tab {
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+    padding: 1em;
+    font-size: 0.8em;
+}
+
+.generic-button {
+    background-color: #192d4f;
+    color: white;
+    border: solid white 1px;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 5px;
+    box-shadow: inset 0 0 1px 0 #192d4f;
+    transition: 0.1s;
+    outline: none;
+}
+
+.generic-button:active {
+    box-shadow: inset 200px 0 0 0 #436db5;
+    cursor: pointer;
+    color: black;
+}
+
+.collapsible{
+    background-color: #192d4f;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    border: solid white 1px;
+    font-family: Montserrat;
+    font-weight: bold;
+    padding: 18px;
+    font-size: 1em;
+    box-shadow: inset 0 0 1px 0 #192d4f;
+    transition: 0.1s;
+    outline: none;
+    text-align: left;
+}
+
+.active, .collapsible:active {
+    border-radius: 5px 5px 0 0;
+    transition: 0.5s;
+    border-style: solid none none none;
+    box-shadow: inset 0 60px 0 0 #192d4f;
+    background-color: #436db5;
+    color: black;
+}
+
+.collapsible.active:hover {
+    box-shadow: inset 0 60px 0 0 #192d4f;
+    transition: 0.9s;
+    color: white;
+}
+
+.collapsible-text-container {
+    padding: 0 18px;
+    border-radius: 0 0 5px 5px;
+    max-height: 0;
+    border: 1px none white;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #436db5;
+    color: white;
+}
+
+.game-btns{
+    display: grid;
+    gap: 1em;
+    padding: 1em;
+    font-size: 0.8em;
+    justify-content: left;
+}
+
+
+/* mobile site */
+
+.generic-button {
+    width: 200px;
+    height: 50px;
+}
+
+.logo {
+    font-size: 2em;
+}
+
+.comment_text {
+    font-size: 0.6em;
+}
+
+.main-text {
+    font-size: 0.8em;
+    text-align: left;
+}
+
+.link_list {
+    display: grid;
+    justify-items: center;
+    gap: 0.5em;
+    padding: 1em;
+}
+
+
+/* desktop site */
+@media only screen and (min-width: 850px) {
+
+    body {
+        height: 25em;
+        padding: 10em;
+    }
+
+    .logo {
+        font-size: 50px;
+    }
+
+    .proj-container{
+        inline-size: 50em;
+        overflow-wrap: break-word;
+    }
+
+    .main-text {
+        font-size: 20px;
+    }
+
+    .comment_text {
+        font-size: 0.6em;
+    }
+
+    .buttons-tab {
+        display: flex;
+        justify-content: space-around;
+        padding: 2em;
+        font-size: 1em;
+    }
+
+    .collapsible{
+        height: 60px;
+        box-shadow: inset 0 0 0 0 #192d4f;
+        transition: ease-out 0.3s;
+    }
+
+    .collapsible:hover{
+        box-shadow: inset 0 60px 0 0 #436db5;
+        cursor: pointer;
+        color: black;
+    }
+
+    .collapsible:active {
+        color: #192d4f;
+        transition: 0.1s;
+        font-size: 0.9em;
+    }
+
+    .generic-button {
+        width: 150px;
+        height: 50px;
+        box-shadow: inset 0 0 0 0 #192d4f;
+        transition: ease-out 0.7s;
+    }
+
+    .generic-button:hover {
+        box-shadow: inset 250px 0 0 0 #436db5;
+        cursor: pointer;
+        color: black;
+    }
+
+    .link_tab {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+    }
+
+    .link_list {
+        display: flex;
+        gap: 0;
+        justify-content: left;
+        padding: 1em;
+    }
+
+    .link_list .generic-button {
+        padding: 1em;
+        margin: 0 1em 0 0;
+        font-size: 1em;
+    }
+
+    .generic-button:active {
+        color: #192d4f;
+        transition: 0.1s;
+        font-size: 0.9em;
+    }
+
+}
