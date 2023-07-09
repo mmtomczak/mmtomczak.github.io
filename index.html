@@ -2,50 +2,176 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href=css/style-light.css>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css">
     <title>Mateusz Tomczak</title>
 </head>
 <body>
-<div class="main-container">
-    <div class="title">
-        <p><span class="logo">Mateusz Tomczak</span></p>
-        <p class="language-change">PL/EN</p>
-    </div>
-    <div class="text-container">
-        <p class="main-text">Hi, I'm Mateusz. Welcome to my website!<br/>
-            I'm 3rd year student of informatics and econometrics at the University of Warsaw.</p>
-        <p class="main-text">Feel free to contact me by my e-mail: <a href="mailto:mmtomczakk@gmail.com"><span
-                class="important-text">mmtomczakk@gmail.com</span></a></p>
-    </div>
-    <div class="nav-container">
-        <ul class="buttons-tab">
-            <li><a href="index-about.html" class="nav_list" id="ab">
-                <button class="generic-button">About me</button>
-            </a></li>
-            <li><a href="index-skls-exp.html" class="nav_list" id="skl_exp">
-                <button class="generic-button">Skills</button>
-            </a></li>
-            <li><a href="index-proj.html" class="nav_list" id="projects">
-                <button class="generic-button">Projects</button>
-            </a></li>
-            <li><a href="index-CV.html" class="nav_list" id="cv">
-                <button class="generic-button">My CV</button>
-            </a></li>
-        </ul>
 
-    </div>
-    <div class="social-container">
-        <ul class="social-list">
-            <li><a href="https://www.facebook.com/mateusz.tomczak.524/" class="social-link"><img src="images/FB.png"
+<div class="container">
+    <section id="intro">
+        <div class="hero">
+            <h2 class="name">Mateusz Tomczak</h2>
+        </div>
+        <nav id="nav-bar">
+            <ul id="nav-list">
+                <li class="nav-btn"><a class="nav" href="#about-me">About me</a></li>
+                <li class="nav-btn"><a class="nav" href="#work-experience">Experience</a></li>
+                <li class="nav-btn"><a class="nav" href="#my-projects">Projects</a></li>
+                <li class="nav-btn"><a class="nav" href="#my-certifications">Certifications</a></li>
+                <li class="nav-btn"><a class="nav" href="#contact">CV and Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section id="about-me">
+        <h4 class="header">Hi, I'm Mateusz</h4>
+        <p>I'm University of Warsaw graduate. My major was Informatics and Econometrics. Currently,
+            I'm planning on continuing my education and obtain a master's degree, although
+            I will be switching from full-time to part-time studies.
+            My priority now is to obtain more work experience in the field of my studies and interests.
+        </p>
+        <h3 id="skills-header">My skills</h3>
+        <p>During my studies and in my free time I acquired useful skills in the fields of programming and data
+            science. Some of them I had an opportunity to utilize in practical university projects. You can find some
+            of my projects listed in the <a class="about-nav" href="#my-projects">My Projects</a> section.
+        </p>
+        <p>My skills include programming in Python, C++, html, css and R. I've also had some experience with JavaScript.
+            I'm also confident in my skills in SQL and MS Office apps (mainly Excel).
+        </p>
+        <p>During my studies I've acquired skills in OLS modelling, Time-Series analysis and statistics both in theory
+            and in practice using Python and R languages. Python is my main programming language of interests and during my
+            time in university I've tried to expand my knowledge of it by participating in voluntary classes, such as
+            Text Mining in Python, Data Driven Research and Usage of Python Language. By completing those, and
+            other, voluntary classes in Digital Economy educational track I've acquired certification of course
+            completion, which can be seen <a class="about-nav" href="#my-certifications">here</a> in My Certifications
+            section.
+        </p>
+        <p>My native language is Polish. English is my second language, but I've already had an opportunity to test my
+            language skills in workplace during my internship in Citibank, where communication was mainly conducted
+            in english.
+        </p>
+    </section>
+    <section id="work-experience">
+        <h4 class="header">My Experience</h4>
+        <div class="grid job-grid">
+            <div class="aside job-aside">
+                <h4 class="employer">Citibank Europe PLC</h4>
+                <div class="job-info">
+                    <h5 class="duration employment">11.2022 - 12.2022</h5>
+                    <h5 class="location employment">Warsaw</h5>
+                </div>
+            </div>
+            <div class="desc employment">
+                <h5 class="work-title">Intern</h5>
+                <h6 class="work-department">Transaction Control Department</h6>
+                <p class="desc role">Verification and processing of incoming transactions using Citi's software.
+                    Error handling in coordination with other departments.</p>
+            </div>
+        </div>
+    </section>
+    <section id="my-projects">
+        <h4 class="header">My Projects</h4>
+        <div class="grid project-grid">
+            <div class="aside project-aside">
+                <h5 class="project-title">Python console adventure game</h5>
+                <p class="project-desc">Simple python console-based adventure game with map and progress saving/loading
+                    functions.</p>
+            </div>
+            <div class="projects-nav">
+                <a href="https://github.com/mmtomczak/Game" class="nav_list" target="_blank">
+                    <button class="generic-button project-btn">GitHub</button>
+                </a>
+            </div>
+        </div>
+        <div class="grid project-grid">
+            <div class="aside project-aside">
+                <h5 class="project-title">Linear regression model in Python</h5>
+                <p class="project-desc">OLS model used as my final project for Econometrics class</p>
+            </div>
+            <div class="projects-nav">
+                <a href="https://github.com/mmtomczak/econometricsFinal" class="nav_list" target="_blank">
+                    <button class="generic-button project-btn">GitHub</button>
+                </a>
+            </div>
+        </div>
+        <div class="grid project-grid">
+            <div class="aside project-aside">
+                <h5 class="project-title">R Shiny app</h5>
+                <p class="project-desc">Simple R Shiny app that I've done as a final project for Computer Systems Design class. It visualises
+                    population changes in Polish voivodeships in years 2003-2020.</p>
+            </div>
+            <div class="projects-nav">
+                <a href="http://mmtomczak.shinyapps.io/aplikacja" class="nav_list" target="_blank">
+                    <button class="generic-button project-btn">App</button>
+                </a>
+                <a href="https://github.com/mmtomczak/RShiny_app" class="nav_list" target="_blank">
+                    <button class="generic-button project-btn">GitHub</button>
+                </a>
+            </div>
+        </div>
+        <div class="grid project-grid">
+            <div class="aside project-aside">
+                <h5 class="project-title">Personal website</h5>
+                <p class="project-desc">Code of this website can be found on my GitHub</p>
+            </div>
+            <div class="projects-nav">
+                <a href="https://github.com/mmtomczak/mmtomczak.github.io" class="nav_list" target="_blank">
+                    <button class="generic-button project-btn">GitHub</button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="my-certifications">
+        <h4 class="header">My Certifications</h4>
+        <div class="grid cert-grid">
+            <div class="aside cert-aside">
+                <h5 class="cert-title">Digital Economy</h5>
+                <p class="cert-institution">Univeristy of Warsaw</p>
+            </div>
+            <div class="certificate">
+                <a class="image-btn" href="certifications/digital_economy.png" target="_blank">
+                    <img class="certificate-img" src="certifications/digital_economy.png" alt="Digital Economy certificate">
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h4 class="header">CV and Contact</h4>
+        <div class="grid">
+            <p id="contact-email">Feel free to contact me by my e-mail:</p>
+            <a href="mailto:mmtomczakk@gmail.com">mmtomczakk@gmail.com</a>
+        </div>
+        <div class="grid">
+            <p id="contact-cv">Download my CV:</p>
+            <div class="cv-tab">
+                <a href="files/CV_Mateusz_Tomczak.pdf" class="nav_list" target="_blank">
+                    <button class="generic-button">Polish</button>
+                </a>
+                <a href="files/CV_Mateusz_Tomczak_eng.pdf" class="nav_list" target="_blank">
+                    <button class="generic-button">English</button>
+                </a>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="aside">
+                All my projects can be found on my
+                <a class="about-nav" href="https://github.com/mmtomczak" target="_blank">GitHub</a>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="aside">
+                You can also find me on Facebook and LinkedIn
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/mateusz.tomczak.524/" class="social-link"><img src="images/FB.png"
                                                                                                  alt="Facebook"
-                                                                                                 class="social_img"></a>
-            </li>
-            <li><a href="https://www.linkedin.com/in/tomczak-mateusz/" class="social-link"><img src="images/LI.png"
+                                                                                                 class="social-img"></a>
+                <a href="https://www.linkedin.com/in/tomczak-mateusz/" class="social-link"><img src="images/LI.png"
                                                                                                 alt="LinkedIn"
-                                                                                                class="social_img"></a>
-            </li>
-        </ul>
-    </div>
+                                                                                                class="social-img"></a>
+            </div>
+        </div>
+    </section>
 </div>
 
 </body>

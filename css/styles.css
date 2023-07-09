@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#skills-header, #interests-header {
+    padding-top: 1em;
+}
+
+.nav {
+    border-bottom: solid #FFFFF4 2px;
+}
+
+.nav:hover {
+    border-bottom: solid #436db5 2px;
+}
+
+#contact-cv {
+    font-weight: bold;
+}
+
+.grid:last-of-type {
+    border-bottom: none;
+}
+
+.hero {
+    width:100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 2em;
+    color: transparent;
+    background-image: linear-gradient(to bottom right, #436db5 1em, #FFFFF4);
+    -webkit-background-clip: text;
+}
+
+.generic-button:active {
+    box-shadow: inset 200px 0 0 0 #436db5;
+    cursor: pointer;
+    color: black;
+}
+
+.generic-button:hover {
+    box-shadow: inset 250px 0 5em 0 #436db5;
+    cursor: pointer;
+    color: #192d4f;
+}
+
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    color: #FFFFF4;
+    background: #192d4f;
+}
+
+.social {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#contact-email, #contact-cv {
+    padding-top: 0.5em;
+}
+
+.certificate-img {
+    max-width: 150px;
+    transition: 0.9s;
+    border: solid #436db5 5px;
+    border-radius: 5px;
+}
+
+.certificate-img:hover {
+    border: solid #FFFFF4 5px;
+    transition: 0.5s;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.certificate {
+    aspect-ratio: 1/1;
+    display: grid;
+    align-items: center;
+}
+
+a {
+    color: #FFFFF4;
+    text-decoration: none;
+    font-weight: bold;
+    transition: ease-out 0.2s;
+}
+
+a:hover {
+    color: #436db5;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.duration, .location {
+    font-weight: normal;
+}
+
+p {
+    text-align: justify;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.social {
+    padding-top: 1em;
+}
+
+.social-img {
+    max-width: 70px;
+}
+
+.generic-button {
+    background-color: #192d4f;
+    color: #FFFFF4;
+    border: solid #FFFFF4 1px;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 5px;
+    box-shadow: inset 0 0 1px 0 #192d4f;
+    transition: 0.1s;
+    outline: none;
+}
+
+@media only screen and (max-width: 950px) {
+    body{
+        padding: 1em;
+        padding-top: 0;
+        font-size: 15px;
+    }
+
+    .name {
+        padding: 2em;
+        padding-bottom: 0;
+        font-size: 30px;
+    }
+
+    section {
+        padding: 1em;
+    }
+
+    #nav-list{
+        visibility: hidden;
+        height: 0px;
+    }
+
+    #about-me p {
+        padding: 0.5em;
+    }
+
+    .hero {
+        height: 5em;
+    }
+
+    .aside {
+        padding-top: 0.5em;
+    }
+
+    .header {
+        padding-top: 1.5em;
+        font-size: 2em;
+        border-bottom: solid #FFFFF4 2px;
+        border-radius: 1px;
+    }
+
+    .grid {
+        display: grid;
+        justify-items: center;
+        padding-bottom: 1em;
+        border-bottom: solid #436db5 1px;
+    }
+
+    .job-grid {
+        justify-items: left;
+    }
+
+    .job-aside {
+        flex-direction: column;
+        display: flex;
+        align-items: baseline;
+    }
+
+    .job-info {
+        display: flex;
+        font-size: 11px;
+        padding-bottom: 5px;
+    }
+
+    .location{
+        padding-left: 1em;
+    }
+
+    .location {
+        font-weight: bold;
+    }
+
+    .project-title {
+        font-size: 15px;
+        padding-top: 0.5em;
+    }
+
+    .project-desc {
+        font-size: 13px;
+        padding: 1em;
+    }
+
+    .projects-nav {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .generic-button {
+        min-width: 150px;
+        height: 50px;
+        box-shadow: inset 0 0 0 0 #192d4f;
+        transition: ease-out 0.7s;
+    }
+
+    .cert-title {
+        font-size: 1.5em;
+    }
+
+    .cv-tab {
+        width: 100%;
+        padding-top: 1em;
+        display: flex;
+        align-content: center;
+        justify-content: space-evenly;
+    }
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1200px) {
+    body{
+        padding: 5em;
+        padding-top: 0;
+        font-size: 20px;
+    }
+
+    .name {
+        padding: 2em;
+        font-size: 45px;
+    }
+
+    section {
+        padding: 2em;
+    }
+
+    #nav-list{
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+    }
+
+    #about-me p {
+        padding: 0.5em;
+    }
+
+    .hero {
+        height: 10em;
+    }
+
+    .aside {
+        padding-top: 0.5em;
+    }
+
+    .header {
+        padding-top: 1.5em;
+        font-size: 2em;
+        border-bottom: solid #FFFFF4 2px;
+        border-radius: 1px;
+    }
+
+    .grid {
+        display: grid;
+        justify-items: center;
+        padding-bottom: 1em;
+        border-bottom: solid #436db5 1px;
+    }
+
+    .job-grid {
+        justify-items: left;
+    }
+
+    .job-aside {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .job-info {
+        display: flex;
+        font-size: 20px;
+        padding-bottom: 5px;
+    }
+
+    .location, .duration{
+        padding-left: 1em;
+    }
+
+    .location {
+        font-weight: bold;
+    }
+
+    .project-title {
+        font-size: 20px;
+        padding-top: 0.5em;
+    }
+
+    .project-desc {
+        font-size: 16px;
+        padding: 1em;
+    }
+
+    .projects-nav {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .generic-button {
+        min-width: 150px;
+        height: 50px;
+        box-shadow: inset 0 0 0 0 #192d4f;
+        transition: ease-out 0.7s;
+    }
+
+    .cert-grid {
+        width: 100%;
+        display: flex;
+        align-content: space-evenly;
+        justify-content: center;
+    }
+
+    .cert-aside {
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        padding-right: 2em;
+    }
+
+    .cert-title {
+        font-size: 1.5em;
+    }
+
+    .cv-tab {
+        width: 100%;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        display: flex;
+        align-content: center;
+        justify-content: space-evenly;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    body{
+        padding: 10em;
+        padding-top: 0;
+        font-size: 20px;
+    }
+
+    .hero {
+        width:100%;
+        display: grid;
+        justify-content: left;
+        align-content: center;
+        padding-bottom: 2em;
+        color: transparent;
+        background-image: linear-gradient(to bottom right, #436db5 1em, #FFFFF4);
+        -webkit-background-clip: text;
+    }
+
+    .name {
+        padding: 2em;
+        padding-left: 0;
+        font-size: 60px;
+    }
+
+    section {
+        padding: 2em;
+        padding-bottom: 0;
+    }
+
+    #nav-list{
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+    }
+
+    #about-me p {
+        padding: 0.5em;
+    }
+
+    .hero {
+        height: 10em;
+    }
+
+    .aside {
+        padding-top: 0.5em;
+    }
+
+    .header {
+        padding-top: 1.5em;
+        font-size: 2em;
+        border-bottom: solid #FFFFF4 2px;
+        border-radius: 1px;
+    }
+
+    .grid {
+        display: grid;
+        justify-items: center;
+        padding-bottom: 1em;
+        border-bottom: solid #436db5 1px;
+    }
+
+    .job-grid {
+        justify-items: left;
+    }
+
+    .job-aside {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .job-info {
+        display: flex;
+        font-size: 20px;
+        padding-bottom: 5px;
+    }
+
+    .location, .duration{
+        padding-left: 1em;
+    }
+
+    .location {
+        font-weight: bold;
+    }
+
+    .project-title {
+        font-size: 20px;
+        padding-top: 0.5em;
+    }
+
+    .project-desc {
+        font-size: 16px;
+    }
+
+    .project-grid{
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+
+    .project-aside {
+        min-height: 150px;
+        width: 70%;
+    }
+
+    .project-desc {
+        font-size: 16px;
+        padding: 1em;
+    }
+
+    .projects-nav {
+        padding-top: 1em;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .project-btn {
+        width: 100%;
+    }
+
+    .generic-button {
+        min-width: 150px;
+        height: 50px;
+        box-shadow: inset 0 0 0 0 #192d4f;
+        transition: ease-out 0.7s;
+    }
+
+    .cert-grid {
+        width: 100%;
+        display: flex;
+        align-content: space-evenly;
+        justify-content: center;
+    }
+
+    .cert-aside {
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        padding-right: 2em;
+    }
+
+    .cert-title {
+        font-size: 1.5em;
+    }
+
+    .cv-tab {
+        width: 100%;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        display: flex;
+        align-content: center;
+        justify-content: space-evenly;
+    }
+}
