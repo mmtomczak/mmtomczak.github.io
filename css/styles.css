@@ -156,6 +156,8 @@ img {
     }
 
     .name {
+        display: grid;
+        justify-content: center;
         padding: 2em;
         padding-bottom: 0;
         font-size: 25px;
